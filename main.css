@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(images/poly.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-top: 30px;
+}
+
+
+main {
+    text-align: center;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;  
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 5px
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    padding-top: 30px    
+}
+
+h2, h3 {
+    color: black;
+}
+
+header h3 {
+    color: white;
+    font-size: 20px;
+    padding: 0 50px;
+}
+
+input, button {
+    padding: 15px 30px;
+    border-radius: 35px;
+    background-color: #03A9F4;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+form {
+    background-color: white;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+label {
+    display: block;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.quiz-answer-choices {
+    margin-bottom: 25px;
+}
+
+legend {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+fieldset {
+    border: none;
+}
+
+.correct-answer, .wrong-answer, .total-score {
+    background-color: lightgrey;
+    width: 100%;
+    height: 250px;
+}
+
+.correct-answer h3, .wrong-answer h3, .total-score h3 {
+    padding: 0 10px;
+}
+
+.wrong-answer h2, .total-score h2 {
+    padding-top: 60px;
+}
+
+.correct-answer h2 {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.start-over {
+    margin-top: 10px
+}
+
+#alert {
+    color: black;
+}
+
+
+@media only screen and (min-width: 600px) {
+    
+    form, .correct-answer, .wrong-answer, .total-score {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    label {
+        margin-left: 100px;
+    }
+
+    .correct-answer h2 {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    input, button {
+        padding: 15px 30px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+
+    header h3 {
+        padding: 0 100px;
+    }
+
+    body {
+        background-size: cover
+    }
+}
